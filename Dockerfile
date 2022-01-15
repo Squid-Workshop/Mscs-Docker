@@ -15,6 +15,8 @@ RUN apt-get install openjdk-17-jdk -y
 
 RUN ln -sf /bin/bash /bin/sh
 
+COPY ./overviewer_settings.py .
+
 RUN git clone git://github.com/overviewer/Minecraft-Overviewer.git
 RUN git clone https://github.com/MinecraftServerControl/mscs.git
 
