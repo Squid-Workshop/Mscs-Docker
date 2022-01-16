@@ -18,7 +18,7 @@ RUN ln -sf /bin/bash /bin/sh
 COPY ./overviewer_settings.py .
 
 RUN git clone git://github.com/overviewer/Minecraft-Overviewer.git
-RUN git clone https://github.com/MinecraftServerControl/mscs.git
+RUN git clone https://github.com/Squid-Workshop/mscs.git
 
 WORKDIR /Minecraft-Overviewer
 RUN python3 setup.py install
